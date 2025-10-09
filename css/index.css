@@ -213,7 +213,7 @@ header::before {
 }
 .menu-dropdown-item {
   position: relative;
-  font-size: clamp(10px, 5vw, 50px);
+  font-size: clamp(10px, 5vw, 30px);
   font-weight: 900;
   text-decoration: none;
   text-align: center;
@@ -324,12 +324,12 @@ header::before {
   margin: 0 auto;
 }
 .about-me h1 {
-  font-size: clamp(20px, 5vw, 60px);
+  font-size: clamp(20px, 5vw, 30px);
   color: var(--color-primary);
 }
 .about-me strong {
   color: var(--color-primary);
-  font-size: clamp(15px, 5vw, 30px);
+  font-size: clamp(15px, 5vw, 20px);
 }
 .contact-icon {
   display: flex;
@@ -359,7 +359,7 @@ header::before {
   width: 50%;
   margin: 10px 0;
   color: var(--color-text);
-  font-size: clamp(10px, 5vw, 20px);
+  font-size: clamp(10px, 5vw, 12px);
 }
 .skill {
   display: flex;
@@ -397,7 +397,7 @@ header::before {
   transform: translate(-50%, -50%);
   font-size: clamp(5px, 5vw, 9px);
   font-weight: 900;
-  color: var(--color-primary);
+  color: var(--color-text);
 }
 .progress {
   height: 100%;
@@ -489,7 +489,7 @@ header::before {
   margin-bottom: 30px;
 }
 .project-nav h2 {
-  font-size: clamp(20px, 5vw, 50px);
+  font-size: clamp(20px, 5vw, 30px);
   font-weight: 900;
   margin-right: 10px;
   color: var(--color-primary);
@@ -632,7 +632,7 @@ header::before {
 
 .contact-me h2 {
   text-align: center;
-  font-size: 4rem;
+  font-size: 2rem;
   text-shadow: 0 4px 10px var(--color-text-shadow);
   margin-bottom: 0.5rem;
   color: var(--color-primary);
@@ -640,7 +640,7 @@ header::before {
 
 .contact-me p {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--color-text);
   margin-bottom: 2rem;
 }
@@ -653,7 +653,7 @@ header::before {
 
 .contact-form label {
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 0.25rem;
   color: var(--color-primary);
 }
@@ -663,7 +663,7 @@ header::before {
   padding: 0.75rem 1rem;
   border: 1px solid #ddd;
   border-radius: 10px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   transition: border 0.2s, box-shadow 0.2s;
 }
 
@@ -686,7 +686,7 @@ header::before {
   border-radius: 10px;
   background: var(--color-primary);
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: background 0.3s, transform 0.1s;
@@ -749,7 +749,7 @@ header::before {
   height: 50px;
   cursor: pointer;
   border-radius: 50%;
-  background-color: var(--color-background);
+  background-color: var(--color-text);
   border: 2px dashed var(--color-primary);
   box-shadow: 0 2px 5px var(--color-text-shadow);
 }
@@ -763,7 +763,7 @@ header::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-background);
+  background-color: var(--color-text);
   border: 2px dashed var(--color-primary);
   border-radius: 50%;
   box-shadow: 0 1px 2px var(--color-text-shadow);
