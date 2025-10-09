@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
     //For default language 
     let currentLang = localStorage.getItem("language") || "en";
     //For menu
-    const selectedOption = document.querySelector(".about-me-selected-option");
+    const selectedOption = document.querySelector(".menu-nav-links");
+    // const menuSelect = document.querySelector('.menu-nav-links');proj
     const menuItemshref = document.querySelectorAll('.menu-dropdown-item');
     const menuItems = document.querySelectorAll('.menu-dropdown li');
     const menuDropdown = document.querySelector('.menu-dropdown');
@@ -29,14 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectItems = document.querySelectorAll('.project-item');
 
+    const hamburger = document.getElementById('hamburger-menu');
 
-
-    const projectManager = new ProjectManager(projectData);
-    document.querySelectorAll('.project-item').forEach(projectItem => {
-        projectItem.addEventListener('click', () =>{
-            const projectID = projectItem.getAttribute('id');
-            projectManager.openProject(projectID);
-        });
+    hamburger.addEventListener('click', () => {
+      menuDropdown.classList.toggle('active');
     });
 
     // Project filtering functionality
@@ -71,8 +68,29 @@ document.addEventListener('DOMContentLoaded', () => {
     //For progressbar animation
     function progressbarAnimation(){
         progressbar.forEach(bar => {
-            const width = bar.getAttribute('data-width');
-            bar.style.width = width + '%';
+            const target = parseInt(bar.getAttribute("data-width"));
+            const number = bar.parentElement.querySelector(".progress-percent--number");
+            let current = 0;
+            const duration = 1000; // animate (ms)
+            const stepTime = 20;   // update every (ms)
+            const step = target / (duration / stepTime);
+
+            // active progress bar width
+            setTimeout(() => {
+                bar.style.width = target + "%";
+            }, 1000);
+
+            // number count up
+            const counter = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                current = target;
+                clearInterval(counter);
+                }
+                if(number!= null){
+                number.textContent = Math.floor(current) + "%";
+                }
+            }, stepTime);
         });
     }
 
@@ -195,27 +213,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     loadTranslations(currentLang);
 
-    //menu-line
-    menuItemshref.forEach(item => {
-        item.addEventListener('click', function() {
-            if(window.innerWidth >= 768){
-                menuItemshref.forEach(i => i.classList.remove('active'));
-                this.classList.add('active');
-            }
-        });
-    });
+    // //menu-line
+    // menuItemshref.forEach(item => {
+    //     item.addEventListener('click', function() {
+    //         if(window.innerWidth >= 768){
+    //             menuItemshref.forEach(i => i.classList.remove('active'));
+    //             this.classList.add('active');
+    //         }
+    //     });
+    // });
     //open menu
     selectedOption.addEventListener('click',()=>{
+        // hambuger menu open control
         if(window.innerWidth <= 768){
             menuDropdown.classList.toggle('active');
         }
-        menuItems.forEach(item => {
-            item.addEventListener('click', function() {
-                if(window.innerWidth <= 768){
-                    menuDropdown.classList.remove('active');
-                }
-            });
-        });
     })
     function debounce(func, wait) {
         let timeout;
@@ -250,13 +262,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 menuItemshref.forEach(item => {
                     item.classList.remove('active');
                     if (item.getAttribute('href').substring(1) === current) {
-                        if(window.innerWidth <= 768){
-                            selectedOption.textContent = item.textContent;
-                        }else{
-                            item.classList.add('active');
-                        }
+                        item.classList.add('active');
                     }
-                    if(item.getAttribute('href').substring(1) === 'timeline'){
+                    if(item.getAttribute('href').substring(1) === 'project'){
                         progressbarAnimation();
                     }
                 });
@@ -264,7 +272,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, 50));
-
 
     //For translation
     async function loadTranslations(lang) {
@@ -275,8 +282,12 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelectorAll("[data-lang]").forEach((element)=>{
                 const key = element.getAttribute("data-lang");
                 if(translateions[lang][key]){
-
-                    element.innerHTML = translateions[lang][key];
+                    
+                    if (element.hasAttribute("placeholder")) {
+                        element.setAttribute("placeholder", translateions[lang][key]);
+                    } else {
+                        element.innerHTML = translateions[lang][key];
+                    }
 
                     element.style.display = "none";
                     element.offsetHeight; 
@@ -296,11 +307,8 @@ document.addEventListener('DOMContentLoaded', () => {
     languageOptionItems.addEventListener('click', (e) => {
         if (e.target.closest('div')) {
           const selectedItem = e.target.closest('div');
-          const imgSrc = selectedItem.querySelector('img').src;
           let lang = selectedItem.getAttribute('data-lang');
           currentLang = lang;
-          // tranform img src of language option
-          languageOption.innerHTML = `<img src="${imgSrc}" alt="icon" loading="lazy">`;
           // close language option
           languageSelect.classList.remove('open');
           // load translations
@@ -315,7 +323,7 @@ document.addEventListener("click", function (event) {
     const languageOptionItems = document.querySelector('.languageOption-items');
     const languageSelect = document.querySelector('.language-select');
     const menuSelect = document.querySelector('.menu-nav-links');
-    const selectedOption = document.querySelector(".about-me-selected-option");
+    const selectedOption = document.querySelector(".menu-nav-links");
     const dropdownItems = document.querySelectorAll(".menu-dropdown li")
 
     if (!languageOption.contains(event.target) && !languageOptionItems.contains(event.target)) {

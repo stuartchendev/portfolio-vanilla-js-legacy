@@ -8,7 +8,7 @@ const projectData = [
         description: 'A smart garage door system that detects when a user approaches and automatically unlocks the door via an MQTT-based communication system.',
         technologies: ['Android studio', 'MQTT', 'Linux server', 'Java'],
         image: 'images/GP.png',
-        year: '2023/12',
+        year: '2023 Q4',
         githubLink: '',
         challenges:[
             'Ensure the system can accurately detect the user approaching the garage door.',
@@ -54,17 +54,20 @@ class ProjectManager{
     }
 
     openProject(projectID){
+        console.log(this.projects);
         const project = this.projects.find(project => project.id === projectID);
         if(!project){
             console.error('Project not found');
             return;
         }
+        console.log(project.technologies);
         //Create the modal content
         this.modalContainer.innerHTML = `
             <div class="modal-content">
                 <button class="modal-close">&times;</button>
                 <div class="project-details">
-                    <h2>${project.year}/${project.title}</h2>
+                    <h2>${project.title}</h2>
+                    <h3>Time: ${project.year}</h3>
                     <p>${project.description}</p>
                     <h3>Build /w</h3>
                     <div class="Technologies">
@@ -72,11 +75,11 @@ class ProjectManager{
                     </div>
                     <h3>Features</h3>
                     <ul>
-                        ${project.features.map(feature => `<li>${feature}</li>`).join('')}
+                        ${project.features.split(';').map(feature => `<li>${feature}</li>`).join('')}
                     </ul>
                     <h3>Challenges OverCome</h3>
                     <ul>
-                        ${project.challenges.map(challenge => `<li>${challenge}</li>`).join('')}
+                        ${project.challenges.split(';').map(challenge => `<li>${challenge}</li>`).join('')}
                     </ul>
                     <div class="project-links">
                         ${project.githubLink ? `<a href="${project.githubLink}" target="_blank">View On Github</a>` : ''}
@@ -96,7 +99,7 @@ class ProjectManager{
         //     this.modalContainer.body.appendChild(modal);
         // });
         //Show the modal
-        this.modalContainer.style.display = 'block';
+        this.modalContainer.style.display = 'flex';
         this.disableScroll();
     }
     closeModal(){
