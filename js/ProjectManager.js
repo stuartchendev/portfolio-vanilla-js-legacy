@@ -1,27 +1,27 @@
 // Description: This file contains the ProjectManager class which is responsible for managing the projects and displaying them in a modal.
 //add Scroll disable and enable functionality -- 2025-03-06
 
-const projectData = [
-    {
-        id: 'smart-garage-door-system',
-        title: 'Smart Garage Door System',
-        description: 'A smart garage door system that detects when a user approaches and automatically unlocks the door via an MQTT-based communication system.',
-        technologies: ['Android studio', 'MQTT', 'Linux server', 'Java'],
-        image: 'images/GP.png',
-        year: '2023 Q4',
-        githubLink: '',
-        challenges:[
-            'Ensure the system can accurately detect the user approaching the garage door.',
-            'Establish reliable MQTT communication between the Linux server and the door system.',
-            'Ensure the door system correctly processes and responds to MQTT signals.'
-        ],
-        features: [
-            'Hands-free automatic door unlocking using mobile device proximity detection.',
-            'Secure communication using MQTT protocol.',
-            'Remote access and control via a mobile app (if applicable).'
-        ]
-    }
-];
+// const projectData = [
+//     {
+//         id: 'smart-garage-door-system',
+//         title: 'Smart Garage Door System',
+//         description: 'A smart garage door system that detects when a user approaches and automatically unlocks the door via an MQTT-based communication system.',
+//         technologies: ['Android studio', 'MQTT', 'Linux server', 'Java'],
+//         image: 'images/GP.png',
+//         year: '2023 Q4',
+//         githubLink: '',
+//         challenges:[
+//             'Ensure the system can accurately detect the user approaching the garage door.',
+//             'Establish reliable MQTT communication between the Linux server and the door system.',
+//             'Ensure the door system correctly processes and responds to MQTT signals.'
+//         ],
+//         features: [
+//             'Hands-free automatic door unlocking using mobile device proximity detection.',
+//             'Secure communication using MQTT protocol.',
+//             'Remote access and control via a mobile app (if applicable).'
+//         ]
+//     }
+// ];
 class ProjectManager{
     constructor(projects){
         this.projects = projects;

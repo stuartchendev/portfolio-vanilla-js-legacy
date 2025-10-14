@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a personal portfolio website showcasing my skills, projects as a Front-End Developer. The website features a responsive design, multi-language support (Chinese, English, and Japanese), theme toggling (light/dark mode), and smooth animations.
+This is a personal portfolio website showcasing my skills, experience, and projects as a Front-End Developer. The website features a responsive design, multi-language support (Chinese, English, and Japanese), theme toggling (light/dark mode), and smooth animations.
 
 ![Portfolio Website Screenshot](./images/lit3.1%201.svg)
 
@@ -29,20 +29,15 @@ Visit the live website: [https://lit-cup.github.io](https://lit-cup.github.io)
 - JavaScript (ES6+)
 - Intersection Observer API
 - Local Storage for theme and language preferences
-- supabase's backend saved project data
 
 ## Project Structure
 
 ```
 ├── index.html              # Main HTML file
-├── css/
-│   ├── index.css           # Main CSS file
-│   ├── reponsive.css       # RWD CSS file
-│   └── modal.css           # For open modal style
+├── index.css               # Main CSS file
+├── reponsive.css           # Responsive design styles
 ├── js/
 │   ├── index.js            # Main JavaScript file
-│   ├── modules.js          # API call JavaScript file
-│   ├── ProjectManager.js   # interface of project describes
 │   └── language.json       # Translations for multi-language support
 ├── images/                 # Image assets
 └── README.md               # Project documentation

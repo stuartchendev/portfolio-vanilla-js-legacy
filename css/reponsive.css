@@ -1,8 +1,9 @@
 @media (min-width: 600px) and (max-width: 1024px) {
   header::before {
+    height: 50vh;
     border-radius: 0 0 40px 40px;
     background: radial-gradient(
-      ellipse at bottom,
+      ellipse,
       var(--color-background) 75%,
       var(--color-primary) 300%
     );
@@ -271,22 +272,6 @@
   .contact-me{
     max-width: 80%;
   }
-    .contact-me h2{
-    font-size: 1.5rem;
-  }
-  .contact-me p{
-    font-size: 1rem;
-  }
-  .contact-form label{
-    font-size: 1rem;
-  }
-  .contact-form input,
-  .contact-form textarea {
-  font-size: 1rem;
-  }
-  .contact-form button{
-    font-size: 1rem;
-  } 
   .footer {
     padding: 0 4px;
   }
@@ -300,38 +285,5 @@
   }
   .footer-up {
     margin: 6px 0 0 0;
-  }
-}
-@media (max-width: 324px) {
-  .project{
-    margin: 20px 20px;
-  }
-  .skill-growth{
-    padding: 10px;
-  }
-  .skill-list{
-    width: 100%;
-    justify-content: center;
-  }
-  .skill-growth--current{
-    border: 0px;
-    margin-right: 0px;
-  }
-  .current-skill-title{
-    text-align: center;
-  }
-  .skill-growth--content{
-    flex-direction: column;
-  }
-  .skill-growth--inprogress{
-    width: 100%;
-    align-items: center;
-  }
-  .contact-me{
-    max-width: 90%;
-  }
-  .footer-toggle{
-    flex-direction: column;
-
   }
 }
