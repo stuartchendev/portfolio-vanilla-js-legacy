@@ -1,7 +1,7 @@
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ2YWlveXd4Zmhtb2NlY2VkbGxwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk4OTk1MDQsImV4cCI6MjA3NTQ3NTUwNH0.5XrevSt0boGpdHDxlkVGDtLCLYHi-vb6Nc_6I71zoCw'
 const SUPABASE_URL = "https://rvaioywxfhmocecedllp.supabase.co"
-const supabase = createClient(SUPABASE_URL, process.env.SUPABASE_KEY);
+const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
 async function test(){
   const {data} = await supabase.from('projects').select('*');
