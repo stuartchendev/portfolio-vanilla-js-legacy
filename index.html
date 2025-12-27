@@ -1,278 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Yi-Ting Chen's personal website, showcasing his learning journey and portfolio.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Yi-Ting Chen's personal website, showcasing his learning journey and portfolio."
+    />
     <title>CYT's Portfolio | Font-end Developer</title>
-    <link href="./css/index.css?v=2.0.0" rel="stylesheet">
-    <link href="./css/reponsive.css?v=1.2.0" rel="stylesheet">
-    <link href="./css/modal.css?v=1.2.0" rel="stylesheet">
-    <link rel="icon" href="./images/personal-logo.svg" type="image/svg+xml">
-</head>
-<body>
+    <link href="./css/index.css?v=2.0.0" rel="stylesheet" />
+    <link href="./css/reponsive.css?v=1.2.0" rel="stylesheet" />
+    <link href="./css/modal.css?v=1.2.0" rel="stylesheet" />
+    <link rel="icon" href="./images/personal-logo.svg" type="image/svg+xml" />
+  </head>
+  <body>
     <header>
-        <div class="guideline">
-            <nav class="menu">
-                <div class="hamburger-menu" id="hamburger-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-nav-links">
-                    <!-- <p><a href="#about-me" class="about-me-selected-option" data-lang="About-me">關於我</a></p> -->
-                    <ul class="menu-dropdown">
-                        <li><a class="menu-dropdown-item active" href="#about-me" data-lang="About-me">關於我</a></li>
-                        <li><a class="menu-dropdown-item" href="#project" data-lang="Projects">作品集</a></li>
-                        <li><a class="menu-dropdown-item" href="#contact-me" data-lang="contact-me">聯繫我</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="language-select">
-                    <div class="language-option">
-                        <img src="./images/light-theme/translate_light.svg" alt="translate-icon" loading="lazy">
-                    </div>
-                    <div class="languageOption-items">
-                        <div data-lang="zh">
-                            <img class="language-option-img" src="./images/light-theme/tw_light.svg" alt="TW-icon" loading="lazy">
-                        </div>
-                        <div data-lang="en">
-                            <img class="language-option-img" src="./images/light-theme/en_light.svg" alt="EN-icon" loading="lazy">
-                        </div>
-                        <div data-lang="ja">
-                            <img class="language-option-img" src="./images/light-theme/jp_light.svg" alt="JP-icon" loading="lazy">
-                        </div>
-                    </div>
+      <div class="guideline">
+        <nav class="menu">
+          <div class="hamburger-menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-nav-links">
+            <!-- <p><a href="#about-me" class="about-me-selected-option" data-lang="About-me">關於我</a></p> -->
+            <ul class="menu-dropdown">
+              <li>
+                <a
+                  class="menu-dropdown-item active"
+                  href="#about-me"
+                  data-lang="About-me"
+                  >關於我</a
+                >
+              </li>
+              <li>
+                <a
+                  class="menu-dropdown-item"
+                  href="#project"
+                  data-lang="Projects"
+                  >作品集</a
+                >
+              </li>
+              <li>
+                <a
+                  class="menu-dropdown-item"
+                  href="#contact-me"
+                  data-lang="contact-me"
+                  >聯繫我</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="language-select">
+          <div class="language-option">
+            <img
+              src="./images/light-theme/translate_light.svg"
+              alt="translate-icon"
+              loading="lazy"
+            />
+          </div>
+          <div class="languageOption-items">
+            <div data-lang="zh">
+              <img
+                class="language-option-img"
+                src="./images/light-theme/tw_light.svg"
+                alt="TW-icon"
+                loading="lazy"
+              />
             </div>
-        </div>   
+            <div data-lang="en">
+              <img
+                class="language-option-img"
+                src="./images/light-theme/en_light.svg"
+                alt="EN-icon"
+                loading="lazy"
+              />
+            </div>
+            <div data-lang="ja">
+              <img
+                class="language-option-img"
+                src="./images/light-theme/jp_light.svg"
+                alt="JP-icon"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-        <section class="about-me" data-value="關於我" id="about-me">
-            <img src="./images/personal-logo.svg" alt="A emblem of Chen Yi Ting" class="info-image flicker performance-optimized" height="300px" width="300px" loading="lazy">
-            <article>
-                <h1 data-lang="Myname">陳奕廷</h1>
-                <h1 data-lang="JobTitle">前端開發者</h1> 
-                <strong data-lang="Description-title">專注於學習前端的開發</strong>
-                <p data-lang="Description">
-                具備 HTML、CSS、JavaScript 基礎與實作經驗，能設計高效且響應式的網頁介面。持續透過專案實作與學習強化前端開發能力，並積極準備進入業界，期望加入團隊擔任前端工程師，貢獻專業並快速成長。</p>
-                 <div class="contact-icon">
-                    <a href="mailto:stuart.yitingchen@gmail.com" target="_blank" rel="noopener noreferrer"><img src="./images/gmail.svg" alt="gmail-icon" class="gmail-icon" height="30px" width="30px" loading="lazy"></a>
-                    <a href="https://github.com/lit-cup" target="_blank" rel="noopener noreferrer"><img src="./images/light-theme/github_mark_light.svg" alt="github-icon" class="github-icon" height="30px" width="30px" loading="lazy"></a>
-                    <a href="https://github.com/lit-cup" target="_blank" rel="noopener noreferrer"><img src="./images/light-theme/linkedin.svg" alt="github-icon" class="github-icon" height="30px" width="30px" loading="lazy"></a>
-                </div>   
-            </article>
-        </section>
-        <section class="project" id="project">
-            <nav class="project-nav">
-                <h2 data-lang="Projects">Projects</h2>
-                <!-- skill-growth section-->
-                <div class="skill-growth" id="skill-growth">
-                    <div class="skill-growth--content">
-                        <div class="skill-growth--current">
-                            <div class="current-skill-title" data-lang="Current-Skill">cCurrent-Skill</div>
-                            <div class="skill-list">
-                                <!-- HTML -->
-                                <div class="skill">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
-                                    <div class="progress-bar">
-                                    <div class="progress" data-width="90"></div>
-                                    <span class="progress-percent--number">0%</span>
-                                    </div>
-                                </div>
-
-                                <!-- JavaScript -->
-                                <div class="skill">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                                    <div class="progress-bar">
-                                    <div class="progress" data-width="85"></div>
-                                    <span class="progress-percent--number">0%</span>
-                                    </div>
-                                </div>
-
-                                <!-- CSS -->
-                                <div class="skill">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
-                                    <div class="progress-bar">
-                                    <div class="progress" data-width="80"></div>
-                                    <span class="progress-percent--number">0%</span>
-                                    </div>
-                                </div>
-                                <!-- Git -->
-                                <div class="skill">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
-                                    <div class="progress-bar">
-                                    <div class="progress" data-width="75"></div>
-                                    <span class="progress-percent--number">0%</span>
-                                    </div>
-                                </div>
-                                <!--Github -->
-                                <div class="skill">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
-                                    <div class="progress-bar">
-                                    <div class="progress" data-width="70"></div>
-                                    <span class="progress-percent--number">0%</span>
-                                    </div>
-                                </div>
-                                <!-- Linux -->
-                                <div class="skill">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
-                                    <div class="progress-bar">
-                                    <div class="progress" data-width="80"></div>
-                                    <span class="progress-percent--number">0%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-growth--inprogress">
-                            <div class="in-progress-title"  data-lang="In-progress">In Progress 🚀 </div>
-                            <div class="skill-list">
-                                <div class="skill">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
-                                    <div class="progress-bar">
-                                        <div class="progress" data-width="20"></div>
-                                        <span class="progress-percent--number">0%</span>
-                                    </div>
-                                </div>
-                                <div class="skill">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
-                                    <div class="progress-bar">
-                                    <div class="progress" data-width="30"></div>
-                                    <span class="progress-percent--number">0%</span>
-                                    </div>
-                                </div>
-                                <div class="skill">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg" />
-                                    <div class="progress-bar">
-                                        <div class="progress" data-width="10"></div>
-                                        <span class="progress-percent--number">0%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <section class="about-me" data-value="關於我" id="about-me">
+        <img
+          src="./images/personal-logo.svg"
+          alt="A emblem of Chen Yi Ting"
+          class="info-image flicker performance-optimized"
+          height="300px"
+          width="300px"
+          loading="lazy"
+        />
+        <article>
+          <h1 data-lang="Myname">陳奕廷</h1>
+          <h1 data-lang="JobTitle">前端開發者</h1>
+          <strong data-lang="Description-title">專注於學習前端的開發</strong>
+          <p data-lang="Description">
+            具備 HTML、CSS、JavaScript
+            基礎與實作經驗，能設計高效且響應式的網頁介面。持續透過專案實作與學習強化前端開發能力，並積極準備進入業界，期望加入團隊擔任前端工程師，貢獻專業並快速成長。
+          </p>
+          <div class="contact-icon">
+            <a
+              href="mailto:stuart.yitingchen@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="./images/gmail.svg"
+                alt="gmail-icon"
+                class="gmail-icon"
+                height="30px"
+                width="30px"
+                loading="lazy"
+            /></a>
+            <a
+              href="https://github.com/stuartchendev"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="./images/light-theme/github_mark_light.svg"
+                alt="github-icon"
+                class="github-icon"
+                height="30px"
+                width="30px"
+                loading="lazy"
+            /></a>
+            <a
+              href="https://github.com/stuartchendev"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="./images/light-theme/linkedin.svg"
+                alt="github-icon"
+                class="github-icon"
+                height="30px"
+                width="30px"
+                loading="lazy"
+            /></a>
+          </div>
+        </article>
+      </section>
+      <section class="project" id="project">
+        <nav class="project-nav">
+          <h2 data-lang="Projects">Projects</h2>
+          <!-- skill-growth section-->
+          <div class="skill-growth" id="skill-growth">
+            <div class="skill-growth--content">
+              <div class="skill-growth--current">
+                <div class="current-skill-title" data-lang="Current-Skill">
+                  cCurrent-Skill
                 </div>
-            </nav>
-            <!-- Filter buttons -->
-            <div class="project-filter">
-                <button class="filter-btn active" data-filter="all" data-lang="Filter-All">全部</button>
-                <button class="filter-btn" data-filter="web" data-lang="Filter-Web">網頁開發</button>
-                <button class="filter-btn" data-filter="app" data-lang="Filter-App">應用程式</button>
-                <button class="filter-btn" data-filter="other" data-lang="Filter-Other">其他</button>
-            </div>
-            <!-- Project container -->
-            <div class="project-container">
-                <article class="project-item" data-category="other" id="smart-garage-door-system">
-                    <figure>
-                        <p data-lang="Title_gudproject">智慧鐵捲門系統</p>
-                        <figcaption data-lang="P-Name_gudproject">畢業專題</figcaption>
-                        <time>2023/12</time>
-                        <div class="project-tags">
-                            <span class="tag">Android</span>
-                            <span class="tag">MQTT</span>
-                            <span class="tag">Linux</span>
-                        </div>
-                    </figure>
-                </article>
-                <article class="project-item" data-category="app">
-                    <figure>
-                        <p data-lang="Title">標題開頭</p>
-                        <figcaption data-lang="P-Name">智慧鐵捲門系統</figcaption>
-                        <time data-lang="ReleaseTime">2022</time>
-                        <div class="project-tags">
-                            <span class="tag">Android</span>
-                            <span class="tag">MQTT</span>
-                            <span class="tag">Linux</span>
-                        </div>
-                    </figure>
-                </article>
-                <article class="project-item" data-category="other">
-                    <figure>
-                        <p data-lang="Title">標題開頭</p>
-                        <figcaption data-lang="P-Name">數據分析專案</figcaption>
-                        <time data-lang="ReleaseTime">2023</time>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Data Analysis</span>
-                        </div>
-                    </figure>
-                </article>
-                <article class="project-item" data-category="web">
-                    <figure>
-                        <p data-lang="Title">標題開頭</p>
-                        <figcaption data-lang="P-Name">響應式網頁設計</figcaption>
-                        <time data-lang="ReleaseTime">2023</time>
-                        <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">RWD</span>
-                        </div>
-                    </figure>
-                </article>
-                <article class="project-item" data-category="app">
-                    <figure>
-                        <p data-lang="Title">標題開頭</p>
-                        <figcaption data-lang="P-Name">行動應用程式</figcaption>
-                        <time data-lang="ReleaseTime">2024</time>
-                        <div class="project-tags">
-                            <span class="tag">React Native</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                    </figure>
-                </article>
-            </div>
-        </section>
-        <section class="contact-me" data-value="contact-me" id="contact-me">
-            <h2 data-lang="contact-me">Contact Me</h2>
-            <p data-lang="contact-me-description">Feel free to reach out for collaborations or just a friendly hello!</p>
-            <div class="contact-form">
-                <form action="https://formspree.io/f/mayvlrzy" method="POST" class="form" id="contactForm">
-                    <input type="text" name="_gotcha" style="display:none">
-
-                    <label for="name" data-lang="Your-Name">Your Name</label>
-                    <input type="text" id="name" name="name" data-lang="Ph-name" placeholder="Enter your name" autocomplete="name" required>
-                    
-                    <label for="email" data-lang="Your-Email">Your Email</label>
-                    <input type="email" id="email" name="_replyto" data-lang="Ph-email" placeholder="Enter your email" autocomplete="email" required>
-                    
-                    <label for="message" data-lang="Your-Message">Your Message</label>
-                    <textarea id="message" name="message" rows="5" data-lang="Ph-message" placeholder="Enter your message" required></textarea>
-                    
-                    <button type="submit" aria-label="Send your message" data-lang="Send-Message">Send Message</button>
-                    
-                </form>
-            </div>
-        </section>
-        <div class="footer-toggle">
-            <div class="theme-toggle" id="theme-toggle" tabindex="0" aria-label="theme-toggle--themeswitch" aria-pressed="false">
-                <span aria-label="light-mode" class="icon sun-icon">☀️</span>
-                <span aria-label="dark-mode" class="icon moon-icon">🌙</span>
-            </div>
-            <div class="footer-backup">
-                <span class="footer-backup--icon" aria-label="BackToTop" tabindex="0">🔝</span>
-            </div>
-        </div>
-        <footer class="footer" id="footer">
-            <div class="footer-up">
-                <address class="footer-content">
-                    <p><strong data-lang="Contact-Title">Also find me below Let's work together 🙌</strong></p>
-                    <div class="footer-content--list">
-                        <a href="mailto:stuart.yitingchen@gmail.com" target="_blank" rel="noopener noreferrer"><img src="./images/gmail.svg" alt="gmail-icon" class="gmail-icon" height="30px" width="30px" loading="lazy"></a>
-                        <div class="bullet">&bullet;</div>
-                        <a href="https://github.com/lit-cup" target="_blank" rel="noopener noreferrer"><img src="./images/light-theme/github_mark_light.svg" alt="github-icon" class="github-icon" height="30px" width="30px" loading="lazy"></a>
-                        <div class="bullet">&bullet;</div>
-                        <a href="https://github.com/lit-cup" target="_blank" rel="noopener noreferrer"><img src="./images/light-theme/linkedin.svg" alt="github-icon" class="github-icon" height="30px" width="30px" loading="lazy"></a>
+                <div class="skill-list">
+                  <!-- HTML -->
+                  <div class="skill">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg"
+                    />
+                    <div class="progress-bar">
+                      <div class="progress" data-width="90"></div>
+                      <span class="progress-percent--number">0%</span>
                     </div>
-                </address>
+                  </div>
+
+                  <!-- JavaScript -->
+                  <div class="skill">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                    />
+                    <div class="progress-bar">
+                      <div class="progress" data-width="85"></div>
+                      <span class="progress-percent--number">0%</span>
+                    </div>
+                  </div>
+
+                  <!-- CSS -->
+                  <div class="skill">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg"
+                    />
+                    <div class="progress-bar">
+                      <div class="progress" data-width="80"></div>
+                      <span class="progress-percent--number">0%</span>
+                    </div>
+                  </div>
+                  <!-- Git -->
+                  <div class="skill">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                    />
+                    <div class="progress-bar">
+                      <div class="progress" data-width="75"></div>
+                      <span class="progress-percent--number">0%</span>
+                    </div>
+                  </div>
+                  <!--Github -->
+                  <div class="skill">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                    />
+                    <div class="progress-bar">
+                      <div class="progress" data-width="70"></div>
+                      <span class="progress-percent--number">0%</span>
+                    </div>
+                  </div>
+                  <!-- Linux -->
+                  <div class="skill">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
+                    />
+                    <div class="progress-bar">
+                      <div class="progress" data-width="80"></div>
+                      <span class="progress-percent--number">0%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-growth--inprogress">
+                <div class="in-progress-title" data-lang="In-progress">
+                  In Progress 🚀
+                </div>
+                <div class="skill-list">
+                  <div class="skill">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                    />
+                    <div class="progress-bar">
+                      <div class="progress" data-width="20"></div>
+                      <span class="progress-percent--number">0%</span>
+                    </div>
+                  </div>
+                  <div class="skill">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg"
+                    />
+                    <div class="progress-bar">
+                      <div class="progress" data-width="30"></div>
+                      <span class="progress-percent--number">0%</span>
+                    </div>
+                  </div>
+                  <div class="skill">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg"
+                    />
+                    <div class="progress-bar">
+                      <div class="progress" data-width="10"></div>
+                      <span class="progress-percent--number">0%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="copyright">
-                <p>©2025 lit-cup based on HTML/CSS/JavaScript. All rights reserved. </p>
+          </div>
+        </nav>
+        <!-- Filter buttons -->
+        <div class="project-filter">
+          <button
+            class="filter-btn active"
+            data-filter="all"
+            data-lang="Filter-All"
+          >
+            全部
+          </button>
+          <button class="filter-btn" data-filter="web" data-lang="Filter-Web">
+            網頁開發
+          </button>
+          <button class="filter-btn" data-filter="app" data-lang="Filter-App">
+            應用程式
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="other"
+            data-lang="Filter-Other"
+          >
+            其他
+          </button>
+        </div>
+        <!-- Project container -->
+        <div class="project-container">
+          <article
+            class="project-item"
+            data-category="other"
+            id="smart-garage-door-system"
+          >
+            <figure>
+              <p data-lang="Title_gudproject">智慧鐵捲門系統</p>
+              <figcaption data-lang="P-Name_gudproject">畢業專題</figcaption>
+              <time>2023/12</time>
+              <div class="project-tags">
+                <span class="tag">Android</span>
+                <span class="tag">MQTT</span>
+                <span class="tag">Linux</span>
+              </div>
+            </figure>
+          </article>
+          <article class="project-item" data-category="app">
+            <figure>
+              <p data-lang="Title">標題開頭</p>
+              <figcaption data-lang="P-Name">智慧鐵捲門系統</figcaption>
+              <time data-lang="ReleaseTime">2022</time>
+              <div class="project-tags">
+                <span class="tag">Android</span>
+                <span class="tag">MQTT</span>
+                <span class="tag">Linux</span>
+              </div>
+            </figure>
+          </article>
+          <article class="project-item" data-category="other">
+            <figure>
+              <p data-lang="Title">標題開頭</p>
+              <figcaption data-lang="P-Name">數據分析專案</figcaption>
+              <time data-lang="ReleaseTime">2023</time>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Data Analysis</span>
+              </div>
+            </figure>
+          </article>
+          <article class="project-item" data-category="web">
+            <figure>
+              <p data-lang="Title">標題開頭</p>
+              <figcaption data-lang="P-Name">響應式網頁設計</figcaption>
+              <time data-lang="ReleaseTime">2023</time>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">RWD</span>
+              </div>
+            </figure>
+          </article>
+          <article class="project-item" data-category="app">
+            <figure>
+              <p data-lang="Title">標題開頭</p>
+              <figcaption data-lang="P-Name">行動應用程式</figcaption>
+              <time data-lang="ReleaseTime">2024</time>
+              <div class="project-tags">
+                <span class="tag">React Native</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </figure>
+          </article>
+        </div>
+      </section>
+      <section class="contact-me" data-value="contact-me" id="contact-me">
+        <h2 data-lang="contact-me">Contact Me</h2>
+        <p data-lang="contact-me-description">
+          Feel free to reach out for collaborations or just a friendly hello!
+        </p>
+        <div class="contact-form">
+          <form
+            action="https://formspree.io/f/mayvlrzy"
+            method="POST"
+            class="form"
+            id="contactForm"
+          >
+            <input type="text" name="_gotcha" style="display: none" />
+
+            <label for="name" data-lang="Your-Name">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              data-lang="Ph-name"
+              placeholder="Enter your name"
+              autocomplete="name"
+              required
+            />
+
+            <label for="email" data-lang="Your-Email">Your Email</label>
+            <input
+              type="email"
+              id="email"
+              name="_replyto"
+              data-lang="Ph-email"
+              placeholder="Enter your email"
+              autocomplete="email"
+              required
+            />
+
+            <label for="message" data-lang="Your-Message">Your Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              data-lang="Ph-message"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+
+            <button
+              type="submit"
+              aria-label="Send your message"
+              data-lang="Send-Message"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+      <div class="footer-toggle">
+        <div
+          class="theme-toggle"
+          id="theme-toggle"
+          tabindex="0"
+          aria-label="theme-toggle--themeswitch"
+          aria-pressed="false"
+        >
+          <span aria-label="light-mode" class="icon sun-icon">☀️</span>
+          <span aria-label="dark-mode" class="icon moon-icon">🌙</span>
+        </div>
+        <div class="footer-backup">
+          <span class="footer-backup--icon" aria-label="BackToTop" tabindex="0"
+            >🔝</span
+          >
+        </div>
+      </div>
+      <footer class="footer" id="footer">
+        <div class="footer-up">
+          <address class="footer-content">
+            <p>
+              <strong data-lang="Contact-Title"
+                >Also find me below Let's work together 🙌</strong
+              >
+            </p>
+            <div class="footer-content--list">
+              <a
+                href="mailto:stuart.yitingchen@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./images/gmail.svg"
+                  alt="gmail-icon"
+                  class="gmail-icon"
+                  height="30px"
+                  width="30px"
+                  loading="lazy"
+              /></a>
+              <div class="bullet">&bullet;</div>
+              <a
+                href="https://github.com/stuartchendev"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./images/light-theme/github_mark_light.svg"
+                  alt="github-icon"
+                  class="github-icon"
+                  height="30px"
+                  width="30px"
+                  loading="lazy"
+              /></a>
+              <div class="bullet">&bullet;</div>
+              <a
+                href="https://github.com/stuartchendev"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./images/light-theme/linkedin.svg"
+                  alt="github-icon"
+                  class="github-icon"
+                  height="30px"
+                  width="30px"
+                  loading="lazy"
+              /></a>
             </div>
-        </footer>
+          </address>
+        </div>
+        <div class="copyright">
+          <p>
+            ©2025 stuartchendev based on HTML/CSS/JavaScript. All rights
+            reserved.
+          </p>
+        </div>
+      </footer>
     </main>
     <script src="./js/ProjectManager.js?v=1.0.0" defer></script>
     <script src="./js/index.js?v=1.0.0" defer></script>
     <script type="module" src="./js/modules.js?0.0.1"></script>
-</body>
+  </body>
 </html>
 <!-- TODO:
     2025/3/6 Done: add project update
