@@ -8,7 +8,7 @@ This is a personal portfolio website showcasing my skills, projects as a Front-E
 
 ## Live Demo
 
-Visit the live website: [https://lit-cup.github.io](https://lit-cup.github.io)
+Visit the live website: [https://stuartchendev.github.io](https://stuartchendev.github.io)
 
 ## Features
 
@@ -53,13 +53,13 @@ Visit the live website: [https://lit-cup.github.io](https://lit-cup.github.io)
 1. Clone the repository:
 
    ```
-   git clone https://github.com/lit-cup/lit-cup.github.io.git
+   git clone https://github.com/stuartchendev/stuartchendev.github.io.git
    ```
 
 2. Navigate to the project directory:
 
    ```
-   cd lit-cup.github.io
+   cd stuartchendev.github.io
    ```
 
 3. Open `index.html` in your browser to view the website locally.
@@ -328,4 +328,4 @@ The website is compatible with modern browsers:
 
 ## License
 
-© 2024 Chen Yi-Ting. All rights reserved.
+© 2024 stuartchendev. All rights reserved.
