@@ -1,4 +1,5 @@
-# Portfolio Website - Chen Yi-Ting
+# Portfolio Website - Yi Ting(Stuart) Chen 
+# Legacy version built with Vanilla JavaScript, HTML, CSS. newest version is shift to react.
 
 ## Overview
 
@@ -6,9 +7,6 @@ This is a personal portfolio website showcasing my skills, projects as a Front-E
 
 ![Portfolio Website Screenshot](./images/lit3.1%201.svg)
 
-## Live Demo
-
-Visit the live website: [https://stuartchendev.github.io](https://stuartchendev.github.io)
 
 ## Features
 
